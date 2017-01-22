@@ -12,7 +12,7 @@
   <a class="navbar-brand" href="index.html">trvsite</a>
   <ul class="nav nav-pills pull-right nav-justified">
     <li><a href="hotels.html"><span class="glyphicon glyphicon-bed"></span> hotels</a></li>
-    <li><a href="trains.html"><span class="glyphicon glyphicon-modal-window"></span> trains</a></li>
+    <li class="active"><a href="trains.html"><span class="glyphicon glyphicon-modal-window"></span> trains</a></li>
     <li><a href="buses.html"><span class="glyphicon glyphicon-road"></span> buses</a></li>
   </ul>
 </div>
@@ -24,23 +24,5 @@
   <img class="mySlides " src="images/train.jpg" style="width:100%">
   <img class="mySlides " src="images/hotels.jpg" style="width:100%">
 </div>
-
-<script>
-var myIndex = 0;
-carousel();
-
-function carousel() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";
-    }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}
-    x[myIndex-1].style.display = "block";
-    setTimeout(carousel, 2000); // Change image every 2 seconds
-}
-</script>
-
 </body>
 </html>
